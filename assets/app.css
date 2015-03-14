@@ -1,8 +1,0 @@
-ul.inline, ol.inline {
-    list-style: none outside none;
-    margin-left: 0;
-}
-ul.unstyled, ol.unstyled {
-    list-style: none outside none;
-    margin-left: 0;
-}

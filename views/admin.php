@@ -1,226 +1,154 @@
 <p>
-	<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-		<?php _e('Title:', $this->plugin_slug); ?>
-	</label>
-	<input type="text" name="<?php echo $this->get_field_name( 'title' ); ?>"  value="<?php echo $instance['title']; ?>" class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" />
+    <label for="<?php echo $this->get_field_id('title'); ?>">
+        <?php _e('Title:', 'wsnv'); ?>
+    </label>
+    <input type="text" name="<?php echo $this->get_field_name('title'); ?>"  value="<?php echo $instance['title']; ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" />
 </p>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Facebook', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('facebook'); ?>">
-			<?php _e('Facebook URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo $instance['facebook']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('facebook_label'); ?>">
-			<?php _e('Facebook label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('facebook_label'); ?>" name="<?php echo $this->get_field_name('facebook_label'); ?>" type="text" value="<?php echo $instance['facebook_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Twitter', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('twitter'); ?>">
-			<?php _e('Twitter URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo $instance['twitter']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('twitter_label'); ?>">
-			<?php _e('Twitter label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('twitter_label'); ?>" name="<?php echo $this->get_field_name('twitter_label'); ?>" type="text" value="<?php echo $instance['twitter_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Flickr', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('flickr'); ?>">
-			<?php _e('Flickr URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('flickr'); ?>" name="<?php echo $this->get_field_name('flickr'); ?>" type="text" value="<?php echo $instance['flickr']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('flickr_label'); ?>">
-			<?php _e('Flickr label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('flickr_label'); ?>" name="<?php echo $this->get_field_name('flickr_label'); ?>" type="text" value="<?php echo $instance['flickr_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('RSS feed', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('feed'); ?>">
-			<?php _e('RSS feed:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('feed'); ?>" name="<?php echo $this->get_field_name('feed'); ?>" type="text" value="<?php echo $instance['feed']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('feed_label'); ?>">
-			<?php _e('RSS label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('feed_label'); ?>" name="<?php echo $this->get_field_name('feed_label'); ?>" type="text" value="<?php echo $instance['feed_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Linkedin', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('linkedin'); ?>">
-			<?php _e('Linkedin URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php echo $instance['linkedin']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('linkedin_label'); ?>">
-			<?php _e('Linkedin label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('linkedin_label'); ?>" name="<?php echo $this->get_field_name('linkedin_label'); ?>" type="text" value="<?php echo $instance['linkedin_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Google Plus', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('google'); ?>">
-			<?php _e('Google Plus URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('google'); ?>" name="<?php echo $this->get_field_name('google'); ?>" type="text" value="<?php echo $instance['google']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('google_label'); ?>">
-			<?php _e('Google Plus label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('google_label'); ?>" name="<?php echo $this->get_field_name('google_label'); ?>" type="text" value="<?php echo $instance['google_label']; ?>" />
-	</p>
-</fieldset>
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Github', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('github'); ?>">
-			<?php _e('Github URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('github'); ?>" name="<?php echo $this->get_field_name('github'); ?>" type="text" value="<?php echo $instance['github']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('github_label'); ?>">
-			<?php _e('Github label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('github_label'); ?>" name="<?php echo $this->get_field_name('github_label'); ?>" type="text" value="<?php echo $instance['github_label']; ?>" />
-	</p>
-</fieldset>
-<!-- Youtube -->
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Youtube', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('youtube'); ?>">
-			<?php _e('Youtube URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('youtube'); ?>" name="<?php echo $this->get_field_name('youtube'); ?>" type="text" value="<?php echo $instance['youtube']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('youtube_label'); ?>">
-			<?php _e('Youtube label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('youtube_label'); ?>" name="<?php echo $this->get_field_name('youtube_label'); ?>" type="text" value="<?php echo $instance['youtube_label']; ?>" />
-	</p>
-</fieldset>
-<!-- Bitbicket -->
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Bitbicket', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('bitbucket'); ?>">
-			<?php _e('Bitbicket URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('bitbucket'); ?>" name="<?php echo $this->get_field_name('bitbucket'); ?>" type="text" value="<?php echo $instance['bitbucket']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('bitbucket_label'); ?>">
-			<?php _e('Bitbicket label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('bitbucket_label'); ?>" name="<?php echo $this->get_field_name('bitbucket_label'); ?>" type="text" value="<?php echo $instance['bitbucket_label']; ?>" />
-	</p>
-</fieldset>
-<!-- Instagram -->
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Instagram', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('instagram'); ?>">
-			<?php _e('Instagram URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('instagram'); ?>" name="<?php echo $this->get_field_name('instagram'); ?>" type="text" value="<?php echo $instance['instagram']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('instagram_label'); ?>">
-			<?php _e('Instagram label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('instagram_label'); ?>" name="<?php echo $this->get_field_name('instagram_label'); ?>" type="text" value="<?php echo $instance['instagram_label']; ?>" />
-	</p>
-</fieldset>
-<!-- Pinterest -->
-<fieldset style="border:1px solid #dfdfdf; padding:10px 10px 0; margin-bottom:1em;">
-	<legend style="padding:0 5px;">
-	<?php _e('Pinterest', $this->plugin_slug); ?>
-	:</legend>
-	<p>
-		<label for="<?php echo $this->get_field_id('pinterest'); ?>">
-			<?php _e('Pinterest URL:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('pinterest'); ?>" name="<?php echo $this->get_field_name('pinterest'); ?>" type="text" value="<?php echo $instance['pinterest']; ?>" />
-	</p>
-	<p>
-		<label for="<?php echo $this->get_field_id('pinterest_label'); ?>">
-			<?php _e('Pinterest label:', $this->plugin_slug); ?>
-		</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('pinterest_label'); ?>" name="<?php echo $this->get_field_name('pinterest_label'); ?>" type="text" value="<?php echo $instance['pinterest_label']; ?>" />
-	</p>
-</fieldset>
+<?php
+//var_dump($instance['social_networks']); 
+$social_networks = $instance['social_networks'];
+?>
+<?php $md5s = substr(md5(rand()), 0, 7); ?>
+
+<table class="repeatable-fieldset-one <?php echo $md5s; ?>" width="100%">
+    <thead>
+        <tr>
+            <th width="2%"></th>
+            <th width="20%">Social Network</th>
+            <th width="30%">Label</th>
+            <th width="40%">URL</th>
+            <th width="2%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        if ($social_networks) :
+
+            $new_counter = max(array_keys($social_networks));
+
+            foreach ($social_networks as $key => $value) {
+                ?>
+                <tr>
+                    <td><a class="button remove-row" href="#">x</a></td>
+                    <td>
+                        <select name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][icon]">
+                            <?php foreach ($this->get_social_networks() as $k => $v) { ?>
+                                <option value="<?php echo $v[icon]; ?>"<?php selected($value[icon], $k); ?>><?php echo $v[icon]; ?></option>
+                            <?php } ?>
+                        </select>                        
+                    </td>
+                    <td>
+                        <input type="text" data-dynamic="<?php echo $key; ?>" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][label]"  value="<?php echo $value[label]; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][label]" />
+                    </td>
+                    <td>
+                        <input type="text" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][url]"  value="<?php echo $value[url]; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][url]" />
+                    </td>
+                    <td><a class="sort">|||</a></td>
+                </tr>
+                <?php
+            }
+        else :
+            $new_counter = 0;
+            ?>
+            <tr>
+                <td><a class="button remove-row" href="#">x</a></td>
+                <td>
+                    <select name="<?php echo $this->get_field_name('social_networks'); ?>[0][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[0][icon]">
+                        <?php foreach ($this->get_social_networks() as $k => $v) { ?>
+                            <option value="<?php echo $v[icon]; ?>"><?php echo $v[icon]; ?></option>
+                        <?php } ?>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" data-dynamic="0" name="<?php echo $this->get_field_name('social_networks'); ?>[0][label]"  value="" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[0][label]" />
+                </td>
+                <td>
+                    <input type="text" name="<?php echo $this->get_field_name('social_networks'); ?>[0][url]"  value="" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[0][url]" />
+                </td>
+                <td><a class="sort">|||</a></td>
+            </tr>
+        <?php endif; ?>
+    </tbody>
+</table>
+
+<p>
+    <a id="add-row-<?php echo $md5s; ?>" class="button add-row" href="#"><?php _e('Add another:', 'wsnv'); ?></a>
+</p>
+<script>
+    jQuery(document).ready(function ($) {
+
+        var counter = <?php echo $new_counter; ?>;
+
+        $('#add-row-<?php echo $md5s; ?>').on('click', function (e) {
+
+            var new_counter = 1 + counter++;
+
+            var id_input = '<tr class=""><td><a class="button remove-row" href="#">x</a></td>'
+                    + '<td><select name="<?php echo $this->get_field_name('social_networks'); ?>[' + new_counter + '][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[' + new_counter + '][icon]">'
+            <?php foreach ($this->get_social_networks() as $k => $v) { ?>
+                + '<option value="<?php echo $v[icon]; ?>"><?php echo $v[icon]; ?></option>'
+            <?php } ?>
+            + '</select></td>'
+                    + '<td><input type="text" class="widefat" name="<?php echo $this->get_field_name('social_networks'); ?>[' + new_counter + '][label]" id="<?php echo $this->get_field_id('social_networks'); ?>[' + new_counter + '][label]" /></td>'
+                    + '<td><input type="text" class="widefat" name="<?php echo $this->get_field_name('social_networks'); ?>[' + new_counter + '][url]" id="<?php echo $this->get_field_id('social_networks'); ?>[' + new_counter + '][url]" /></td>'
+                    + '</td><td><a class="sort">|||</a></td></tr>';
+
+            $(id_input).appendTo($(this).parents().find('.widget-content table.<?php echo $md5s; ?> tbody'));
+            e.preventDefault();
+        });
+
+        $('.repeatable-fieldset-one').on("click", ".remove-row", function (e) { //user click on remove text
+            $(this).parents('tr').remove();
+            e.preventDefault();
+        })
+
+        $('.repeatable-fieldset-one tbody').sortable({
+            opacity: 0.6,
+            revert: true,
+            cursor: 'move',
+            handle: '.sort'
+        });
+
+    });
+</script>
+
 <!-- Display: Select Input -->
 <p>
-	<label for="<?php echo $this->get_field_id( 'display' ); ?>">
-		<?php _e( 'Display:', $this->plugin_slug ); ?>
-	</label>
-	<select name="<?php echo $this->get_field_name( 'display' ); ?>" class="widefat" id="<?php echo $this->get_field_id( 'display' ); ?>">
-		<?php foreach ( $this->get_display_options() as $k => $v ) { ?>
-		<option value="<?php echo $k; ?>"<?php selected( $instance['display'], $k ); ?>><?php echo $v; ?></option>
-		<?php } ?>
-	</select>
+    <label for="<?php echo $this->get_field_id('display'); ?>">
+        <?php _e('Display:', 'wsnv'); ?>
+    </label>
+    <select name="<?php echo $this->get_field_name('display'); ?>" class="widefat" id="<?php echo $this->get_field_id('display'); ?>">
+        <?php foreach ($this->get_display_options() as $k => $v) { ?>
+            <option value="<?php echo $k; ?>"<?php selected($instance['display'], $k); ?>><?php echo $v; ?></option>
+        <?php } ?>
+    </select>
 </p>
 
 <!-- Icon Size: Select Input -->
 <p>
-	<label for="<?php echo $this->get_field_id( 'size' ); ?>">
-		<?php _e( 'Size:', $this->plugin_slug ); ?>
-	</label>
-	<select name="<?php echo $this->get_field_name( 'size' ); ?>" class="widefat" id="<?php echo $this->get_field_id( 'size' ); ?>">
-		<?php foreach ( $this->get_size_options() as $k => $v ) { ?>
-		<option value="<?php echo $k; ?>"<?php selected( $instance['size'], $k ); ?>><?php echo $v; ?></option>
-		<?php } ?>
-	</select>
+    <label for="<?php echo $this->get_field_id('size'); ?>">
+        <?php _e('Size:', 'wsnv'); ?>
+    </label>
+    <select name="<?php echo $this->get_field_name('size'); ?>" class="widefat" id="<?php echo $this->get_field_id('size'); ?>">
+        <?php foreach ($this->get_size_options() as $k => $v) { ?>
+            <option value="<?php echo $k; ?>"<?php selected($instance['size'], $k); ?>><?php echo $v; ?></option>
+        <?php } ?>
+    </select>
 </p>
 <p>
-	<label for="<?php echo $this->get_field_id('vertical'); ?>">
-		<input id="<?php echo $this->get_field_id( 'vertical' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'vertical' ); ?>" value="1" <?php checked( 1, $instance['vertical'] ); ?>/>
-		<?php esc_html_e( 'Display as vertical list?', $this->plugin_slug ); ?>
-	</label>
+    <label for="<?php echo $this->get_field_id('vertical'); ?>">
+        <input id="<?php echo $this->get_field_id('vertical'); ?>" type="checkbox" name="<?php echo $this->get_field_name('vertical'); ?>" value="1" <?php checked(1, $instance['vertical']); ?>/>
+        <?php esc_html_e('Display as vertical list?', 'wsnv'); ?>
+    </label>
 </p>
+<p>
+    <label for="<?php echo $this->get_field_id('new_window'); ?>">
+        <input id="<?php echo $this->get_field_id('new_window'); ?>" type="checkbox" name="<?php echo $this->get_field_name('new_window'); ?>" value="1" <?php checked(1, $instance['new_window']); ?>/>
+        <?php esc_html_e('Open links in a new window?', 'wsnv'); ?>
+    </label>
+</p>
+<?php /* ?><p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Custom CSS:'); ?></label>
+
+
+  <textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('css'); ?>" name="<?php echo $this->get_field_name('css'); ?>"><?php echo $text; ?></textarea>
+  </p><?php */ ?>
