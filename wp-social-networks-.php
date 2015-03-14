@@ -5,12 +5,13 @@
   Description:  Displays Icons of social network sites that linkback to social network profiles.
   Plugin URI: http://milentijevic.com/wp-social-networks-widget/
   Author: Mladjo
-  Version: 2.0.0
+  Version: 2.0.1
   Author URI: http://milentijevic.com/
  */
 
 if (!defined('ABSPATH'))
     exit; // Exit if accessed directly
+
 
 
     
@@ -243,6 +244,7 @@ if (!class_exists('WPSocialNetworksWidget')) {
             /* Set up some default widget settings. */
             /* Make sure all keys are added here, even with empty string values. */
             $defaults = array(
+                'title' => '',
                 'social_networks' => '',
                 'display' => 'icons',
                 'size' => 'wpsnw-3x',

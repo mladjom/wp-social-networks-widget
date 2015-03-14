@@ -1,6 +1,6 @@
 <p>
     <label for="<?php echo $this->get_field_id('title'); ?>">
-        <?php _e('Title:', 'wsnv'); ?>
+        <?php _e('Title:', 'wpsnv'); ?>
     </label>
     <input type="text" name="<?php echo $this->get_field_name('title'); ?>"  value="<?php echo $instance['title']; ?>" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" />
 </p>
@@ -33,15 +33,15 @@ $social_networks = $instance['social_networks'];
                     <td>
                         <select name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][icon]">
                             <?php foreach ($this->get_social_networks() as $k => $v) { ?>
-                                <option value="<?php echo $v[icon]; ?>"<?php selected($value[icon], $k); ?>><?php echo $v[icon]; ?></option>
+                                <option value="<?php echo $v['icon']; ?>"<?php selected($value['icon'], $k); ?>><?php echo $v['icon']; ?></option>
                             <?php } ?>
                         </select>                        
                     </td>
                     <td>
-                        <input type="text" data-dynamic="<?php echo $key; ?>" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][label]"  value="<?php echo $value[label]; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][label]" />
+                        <input type="text" data-dynamic="<?php echo $key; ?>" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][label]"  value="<?php echo $value['label']; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][label]" />
                     </td>
                     <td>
-                        <input type="text" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][url]"  value="<?php echo $value[url]; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][url]" />
+                        <input type="text" name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][url]"  value="<?php echo $value['url']; ?>" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][url]" />
                     </td>
                     <td><a class="sort">|||</a></td>
                 </tr>
@@ -55,7 +55,7 @@ $social_networks = $instance['social_networks'];
                 <td>
                     <select name="<?php echo $this->get_field_name('social_networks'); ?>[0][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[0][icon]">
                         <?php foreach ($this->get_social_networks() as $k => $v) { ?>
-                            <option value="<?php echo $v[icon]; ?>"><?php echo $v[icon]; ?></option>
+                            <option value="<?php echo $v['icon']; ?>"><?php echo $v['icon']; ?></option>
                         <?php } ?>
                     </select>
                 </td>
@@ -86,7 +86,7 @@ $social_networks = $instance['social_networks'];
             var id_input = '<tr class=""><td><a class="button remove-row" href="#">x</a></td>'
                     + '<td><select name="<?php echo $this->get_field_name('social_networks'); ?>[' + new_counter + '][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[' + new_counter + '][icon]">'
             <?php foreach ($this->get_social_networks() as $k => $v) { ?>
-                + '<option value="<?php echo $v[icon]; ?>"><?php echo $v[icon]; ?></option>'
+                + '<option value="<?php echo $v['icon']; ?>"><?php echo $v['icon']; ?></option>'
             <?php } ?>
             + '</select></td>'
                     + '<td><input type="text" class="widefat" name="<?php echo $this->get_field_name('social_networks'); ?>[' + new_counter + '][label]" id="<?php echo $this->get_field_id('social_networks'); ?>[' + new_counter + '][label]" /></td>'

@@ -70,6 +70,8 @@ Display Icons of social network sites that linkback to social network profiles.
 
 
 == Changelog ==
+= 2.0.1 =
+* Bug fixes
 = 2.0 =
 * FontAwesome changed to custom font
 * Repeatable and draggable widget fields
