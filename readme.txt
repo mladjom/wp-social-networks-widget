@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QXZZJ
 Tags: social networks, widget, google-plus, repeatable fields, draggable, facebook, linkedin, twitter,youtube,instagram,github,rss,pinterest,flickr,bitbucket,tumblr,dribbble,vimeo,wordpress,reddit,stumbleupon,behance,delicious,digg
 Requires at least: 2.5
 Tested up to: 4.1.1
-Stable tag: 2.0
+Stable tag: 2.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
