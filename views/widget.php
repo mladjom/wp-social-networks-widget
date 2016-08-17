@@ -19,11 +19,11 @@ if ($title)
 
         <li class="<?php echo $network['icon']; ?> <?php echo $size; ?> <?php if ($display == "icons") { ?> display-icons<?php } ?>">
 
-            <a rel="external" <?php if ($display == "icons") { ?> title="<?php echo strtolower($network['icon']); ?>" <?php } ?> <?php if ($new_window == 1) { ?> target="_blank" <?php } ?> href="<?php echo $network['url']; ?>">
+            <a rel="external" <?php if ($display == "icons") { ?> title="<?php echo strtolower($network['label']); ?>" <?php } ?> <?php if ($new_window == 1) { ?> target="_blank" <?php } ?> href="<?php echo $network['url']; ?>">
 
                 <?php if (($display == "both") or ( $display == "icons")) { ?>
 
-                    <i class="icon-<?php echo strtolower($network['icon']); ?>"></i>
+                    <i class="<?php echo strtolower($network['icon']); ?>"></i>
 
                 <?php } if (($display == "labels") or ( $display == "both")) { ?> 
 
