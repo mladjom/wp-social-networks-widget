@@ -102,7 +102,7 @@ if (!class_exists('WPSocialNetworksWidget')) {
          * @since 2.0.0
          */
         protected function get_social_networks() {
-            return array(
+            $icons = array(
                 'facebook' => array(
                     'icon' => 'facebook',
                     'label' => '',
@@ -204,6 +204,12 @@ if (!class_exists('WPSocialNetworksWidget')) {
                     'url' => ''
                 ),
             );
+            
+            /*
+            * Add custom icons 
+            * @author hadi khosrojerdi
+            */
+            return apply_filters( "wp_social_netwoks_widget_icons", $icons );
         }
 
         /**
