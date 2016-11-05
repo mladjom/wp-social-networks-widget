@@ -1,5 +1,4 @@
 <?php
-
 /*
   Plugin Name: WP Social Networks Widget
   Description:  Displays Icons of social network sites that linkback to social network profiles.

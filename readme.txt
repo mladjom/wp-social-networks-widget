@@ -35,7 +35,7 @@ Display Icons of social network sites that linkback to social network profiles.
 <li>stumbleupon</li>
 <li>behance</li>
 <li>delicious</li>
-<li>digg></li>
+<li>digg</li>
 </ul>
 
 <p>The approach presented here is simply superior to any other approach.</p>
