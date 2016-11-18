@@ -53,18 +53,11 @@ $social_networks = $instance['social_networks'];
             <tr>
                 <td><a class="button remove-row" href="#">x</a></td>
                 <td>
-                    <select name="<?php echo $this->get_field_name('social_networks'); ?>[<?php echo $key; ?>][icon]" class="widefat" id="<?php echo $this->get_field_id('social_networks'); ?>[<?php echo $key; ?>][icon]">
-
+                    <select name="<?php echo $this->get_field_name('social_networks'); ?>[0][icon]" class="widefat"
+                            id="<?php echo $this->get_field_id('social_networks'); ?>[0][icon]">
                         <?php foreach ($this->get_social_networks() as $k => $v) { ?>
-
-                            <?php if( $value['icon'] ==  $v['icon'] ){ ?>
-
-                            <option value="<?php echo $v['icon']; ?>"<?php selected($value['icon'], $v['icon'] ); ?>><?php echo $k; ?></option>
-                            
-                            <?php } ?>
-
+                            <option value="<?php echo $v['icon']; ?>"><?php echo $v['icon']; ?></option>
                         <?php } ?>
-
                     </select>
                 </td>
                 <td>
